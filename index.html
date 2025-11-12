@@ -845,7 +845,7 @@
       }
 
       /* Experience Section */
- /* Experience Section - Mobile Optimized */
+      /* Experience Section - Mobile Optimized */
       .timeline {
         position: relative;
         max-width: 900px;
@@ -999,7 +999,7 @@
           display: block;
           left: 30px;
         } */
-        @media (max-width: 991px){
+      @media (max-width: 991px) {
         .timeline::after {
           display: block;
           left: 30px;
@@ -1480,32 +1480,32 @@
       }
 
       /* Mobile Styles */
-@media (max-width: 767px) {
-  .contact-form {
-    padding: 25px 20px;
-  }
-  
-  .contact-form .btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-    gap: 8px;
-  }
-}
+      @media (max-width: 767px) {
+        .contact-form {
+          padding: 25px 20px;
+        }
 
-/* Small Mobile Styles */
-@media (max-width: 480px) {
-  .contact-form {
-    padding: 20px 15px;
-  }
-  
-  .contact-form .btn {
-    padding: 12px 20px;
-    font-size: 0.9rem;
-  }
-}
+        .contact-form .btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0 auto;
+          width: 100%;
+          gap: 8px;
+        }
+      }
+
+      /* Small Mobile Styles */
+      @media (max-width: 480px) {
+        .contact-form {
+          padding: 20px 15px;
+        }
+
+        .contact-form .btn {
+          padding: 12px 20px;
+          font-size: 0.9rem;
+        }
+      }
 
       /* Footer */
       footer {
@@ -1807,9 +1807,7 @@
     <header>
       <div class="container">
         <nav class="navbar">
-          <a href="#" class="logo">
-            <span>Nazrul</span>Islam
-          </a>
+          <a href="#" class="logo"> <span>Nazrul</span>Islam </a>
           <ul class="nav-links">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -2089,9 +2087,10 @@
               <h3>Competitive Programming</h3>
               <p class="timeline-company">Online Judges & Contests</p>
               <p>
-                Solving complex problems on various online judges and actively participating 
-                in multiple onsite and online programming contests. Continuously improving 
-                problem-solving skills and algorithmic thinking.
+                Solving complex problems on various online judges and actively
+                participating in multiple onsite and online programming
+                contests. Continuously improving problem-solving skills and
+                algorithmic thinking.
               </p>
             </div>
           </div>
@@ -2102,8 +2101,9 @@
               <h3>Regional Math Olympiad</h3>
               <p class="timeline-company">Winner</p>
               <p>
-                Achieved first place in the Regional Math Olympiad, demonstrating exceptional 
-                mathematical problem-solving abilities and analytical thinking skills.
+                Achieved first place in the Regional Math Olympiad,
+                demonstrating exceptional mathematical problem-solving abilities
+                and analytical thinking skills.
               </p>
             </div>
           </div>
@@ -2114,8 +2114,9 @@
               <h3>Interschool Science Fair</h3>
               <p class="timeline-company">Best Project Award</p>
               <p>
-                Received the Best Project Award for an innovative science project at the 
-                Interschool Science Fair, showcasing creativity and scientific understanding.
+                Received the Best Project Award for an innovative science
+                project at the Interschool Science Fair, showcasing creativity
+                and scientific understanding.
               </p>
             </div>
           </div>
@@ -2328,74 +2329,92 @@
           </div>
 
           <!-- Web3form -->
-<div class="contact-form">
-  <form action="https://api.web3forms.com/submit" method="POST">
-    <input
-      type="hidden"
-      name="access_key"
-      value="791f46ea-c760-4fc5-8f1f-399aa97f077e"
-    />
-    <div class="form-group">
-      <label for="name">Full Name</label>
-      <input
-        type="text"
-        id="name"
-        name="name"
-        class="form-control"
-        placeholder="Enter your full name"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="email">Your Email</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        class="form-control"
-        placeholder="Enter your email address"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="subject">Subject</label>
-      <input
-        type="text"
-        id="subject"
-        name="subject"
-        class="form-control"
-        placeholder="Enter message subject"
-        required
-      />
-    </div>
-    <div class="form-group">
-      <label for="message">Your Message</label>
-      <textarea
-        id="message"
-        name="message"
-        class="form-control"
-        placeholder="Enter your message here..."
-        required
-      ></textarea>
-    </div>
-    <button type="submit" class="btn">
-      <i class="fas fa-paper-plane"></i>
-      Send Message
-    </button>
-  </form>
-</div>
+          <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <!-- Web3Forms Access Key -->
+              <input
+                type="hidden"
+                name="access_key"
+                value="791f46ea-c760-4fc5-8f1f-399aa97f077e"
+              />
 
-              id="form-status"
-              style="
-                display: none;
-                margin-top: 20px;
-                padding: 15px;
-                border-radius: 4px;
-                text-align: center;
-                font-family: 'Rajdhani', sans-serif;
-                font-weight: 600;
-              "
-            ></div>
+              <!-- Optional: Redirect URL after successful submission -->
+              <input
+                type="hidden"
+                name="redirect"
+                value="https://yourwebsite.com/thank-you.html"
+              />
+
+              <!-- Full Name -->
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="form-control"
+                  placeholder="Enter your full name"
+                  required
+                />
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="form-control"
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <!-- Subject (renamed to appear in email body) -->
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject_text"
+                  class="form-control"
+                  placeholder="Enter message subject"
+                  required
+                />
+              </div>
+
+              <!-- Message -->
+              <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-control"
+                  placeholder="Enter your message here..."
+                  required
+                ></textarea>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="btn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <!-- Form Status Message -->
+              <div
+                id="form-status"
+                style="
+                  display: none;
+                  margin-top: 20px;
+                  padding: 15px;
+                  border-radius: 4px;
+                  text-align: center;
+                  font-family: 'Rajdhani', sans-serif;
+                  font-weight: 600;
+                "
+              ></div>
+            </form>
           </div>
         </div>
       </div>
@@ -2410,10 +2429,16 @@
             <p>Passionate about Machine Learning, AI, and Electronics.</p>
 
             <div class="social-links">
-              <a href="https://www.linkedin.com/in/nazrul-islam-255b9926b/"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://github.com/NazrulFaran"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/nazrul-islam-255b9926b/"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/NazrulFaran"
+                ><i class="fab fa-github"></i
+              ></a>
               <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
-              <a href="https://www.instagram.com/nazrul_faran/"> <i class="fab fa-instagram"></i></a>
+              <a href="https://www.instagram.com/nazrul_faran/">
+                <i class="fab fa-instagram"></i
+              ></a>
             </div>
           </div>
           <div class="footer-col">
@@ -2538,12 +2563,33 @@
         }
       });
 
-      // Form submission
+      // // Form submission
+      // const contactForm = document.querySelector(".contact-form form");
+      // contactForm.addEventListener("submit", (e) => {
+      //   e.preventDefault();
+      //   alert("Thank you for your message! I will get back to you soon.");
+      //   contactForm.reset();
+      // });
       const contactForm = document.querySelector(".contact-form form");
-      contactForm.addEventListener("submit", (e) => {
+
+      contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        alert("Thank you for your message! I will get back to you soon.");
-        contactForm.reset();
+
+        const formData = new FormData(contactForm);
+        const response = await fetch(contactForm.action, {
+          method: contactForm.method,
+          body: formData,
+          headers: {
+            Accept: "application/json",
+          },
+        });
+
+        if (response.ok) {
+          alert("✅ Thank you for your message! I will get back to you soon.");
+          contactForm.reset();
+        } else {
+          alert("❌ Oops! Something went wrong. Please try again later.");
+        }
       });
 
       // Add animation to elements when they come into view
@@ -2633,6 +2679,4 @@
       });
     </script>
   </body>
-
 </html>
-
